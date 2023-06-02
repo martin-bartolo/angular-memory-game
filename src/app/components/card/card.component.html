@@ -1,0 +1,13 @@
+<div
+  class="h-full text-center cursor-pointer rounded-lg"
+  (click)="onCardClick()"
+  [ngClass]="{
+    'bg-white': card.color === 'white',
+    'bg-red-600': card.color === 'red',
+    'bg-green-600': card.color === 'green'
+  }"
+>
+  <p class="h-full text-[10rem] leading-[10rem]" *ngIf="card.flipped">
+    {{ card.value }}
+  </p>
+</div>

@@ -1,0 +1,8 @@
+<section class="w-11/12 flex mx-auto flex-wrap pt-5">
+  <div
+    class="basis-1/5 p-[5px] h-[180px]"
+    *ngFor="let card of gameService.cards"
+  >
+    <app-card [card]="card" border-blue></app-card>
+  </div>
+</section>
